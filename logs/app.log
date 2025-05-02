@@ -1,0 +1,339 @@
+{"level":"INFO","time":"2025-04-14T02:45:09.283Z","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-14T02:45:09.288Z","caller":"initialize/mysql.go:27","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-14T02:51:48.048Z","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-14T02:51:48.055Z","caller":"initialize/mysql.go:27","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-14T03:55:36.231Z","caller":"initialize/run.go:15","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-14T03:55:36.236Z","caller":"initialize/mysql.go:27","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-14T03:55:36.237Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-14T03:55:36.237Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T09:44:05.228Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-04-21T09:44:05.229Z","caller":"initialize/mysql.go:16","msg":"Init MySQL initialized Error","error":"dial tcp 127.0.0.1:3306: connect: connection refused","stacktrace":"mtb_web/internal/initialize.CheckErrerPanic\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:16\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:27\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-21T09:45:41.045Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T09:45:41.058Z","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T09:45:41.197Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T09:45:41.197Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"ERROR","time":"2025-04-21T09:45:41.197Z","caller":"initialize/run.go:20","msg":"Server không thể khởi động do lỗi AWS","error":"handlers are already registered for path '/api/v1/product_size/list'","stacktrace":"mtb_web/internal/initialize.Run.func1\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:20\nruntime.gopanic\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/panic.go:791\ngithub.com/gin-gonic/gin.(*node).addRoute\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/tree.go:260\ngithub.com/gin-gonic/gin.(*Engine).addRoute\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:349\ngithub.com/gin-gonic/gin.(*RouterGroup).handle\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:89\ngithub.com/gin-gonic/gin.(*RouterGroup).GET\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:117\nmtb_web/internal/router/manager.(*ProductSizeRouter).InitProductSizeRouter\n\t/home/nghiemhieu/WebMTB/internal/router/manager/product_size.router.go:14\nmtb_web/internal/initialize.NewRouter\n\t/home/nghiemhieu/WebMTB/internal/initialize/router.go:35\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:26\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-21T09:51:30.653Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T09:51:30.656Z","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T09:51:30.783Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T09:51:30.784Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T10:18:02.726Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:18:02.732Z","caller":"initialize/mysql.go:28","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:18:02.917Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T10:18:02.918Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T10:19:53.147Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:19:53.153Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:19:53.153Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"ERROR","time":"2025-04-21T10:19:53.339Z","caller":"initialize/mysql.go:86","msg":"Failed to migrate tables","error":"Error 1830 (HY000): Column 'product_style_id' cannot be NOT NULL: needed in a foreign key constraint 'fk_go_db_products_product_style' SET NULL","stacktrace":"mtb_web/internal/initialize.migrateTables\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:86\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:41\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-21T10:20:46.716Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:20:46.721Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:20:46.721Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"ERROR","time":"2025-04-21T10:20:47.525Z","caller":"initialize/mysql.go:86","msg":"Failed to migrate tables","error":"Error 1830 (HY000): Column 'payment_method_id' cannot be NOT NULL: needed in a foreign key constraint 'fk_go_db_orders_payment_method' SET NULL","stacktrace":"mtb_web/internal/initialize.migrateTables\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:86\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:41\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-21T10:21:18.541Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:21:18.544Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:21:18.544Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"ERROR","time":"2025-04-21T10:21:19.432Z","caller":"initialize/mysql.go:86","msg":"Failed to migrate tables","error":"Error 1830 (HY000): Column 'status_id' cannot be NOT NULL: needed in a foreign key constraint 'fk_go_db_orders_status' SET NULL","stacktrace":"mtb_web/internal/initialize.migrateTables\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:86\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:41\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-21T10:21:49.905Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:21:49.910Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:21:49.910Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T10:21:51.056Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T10:21:51.057Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T10:21:51.057Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T10:23:00.810Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:23:00.815Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:23:00.815Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T10:23:01.869Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T10:23:01.869Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T10:23:01.869Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T10:28:24.270Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:28:24.332Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:28:24.332Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"ERROR","time":"2025-04-21T10:28:24.721Z","caller":"initialize/mysql.go:86","msg":"Failed to migrate tables","error":"Error 1068 (42000): Multiple primary key defined","stacktrace":"mtb_web/internal/initialize.migrateTables\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:86\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:41\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-21T10:30:01.792Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T10:30:01.796Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T10:30:01.796Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T10:30:03.975Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T10:30:03.975Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T10:30:03.975Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T10:30:43.320Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/product_size/list","method":"GET","status":200,"duration":0.004461437}
+{"level":"INFO","time":"2025-04-21T10:30:54.695Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.003896429}
+{"level":"INFO","time":"2025-04-21T11:15:55.394Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:15:55.422Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:15:55.422Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:15:56.917Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:15:56.917Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:15:56.917Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:16:53.735Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.02327063}
+{"level":"INFO","time":"2025-04-21T11:17:35.797Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.011012608}
+{"level":"INFO","time":"2025-04-21T11:17:47.637Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/get/1","method":"GET","status":200,"duration":0.005573955}
+{"level":"INFO","time":"2025-04-21T11:18:31.420Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"GET","status":404,"duration":0.000010291}
+{"level":"INFO","time":"2025-04-21T11:18:59.323Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"GET","status":404,"duration":0.000007662}
+{"level":"INFO","time":"2025-04-21T11:19:12.351Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":500,"duration":0.012934738}
+{"level":"INFO","time":"2025-04-21T11:19:22.002Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":500,"duration":0.006968235}
+{"level":"INFO","time":"2025-04-21T11:19:52.904Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:19:52.909Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:19:52.909Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:19:54.112Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:19:54.112Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:19:54.112Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:20:04.089Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":500,"duration":0.006440365}
+{"level":"INFO","time":"2025-04-21T11:21:19.855Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:21:19.860Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:21:19.860Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:21:20.945Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:21:20.945Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:21:20.945Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:21:24.286Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/update","method":"PUT","status":200,"duration":0.023411243}
+{"level":"INFO","time":"2025-04-21T11:23:07.630Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/delete/1","method":"DELETE","status":200,"duration":0.022988831}
+{"level":"INFO","time":"2025-04-21T11:23:37.241Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"DELETE","status":404,"duration":0.000007538}
+{"level":"INFO","time":"2025-04-21T11:23:44.031Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.021684699}
+{"level":"INFO","time":"2025-04-21T11:24:16.373Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.010959833}
+{"level":"INFO","time":"2025-04-21T11:24:22.641Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":500,"duration":0.010411673}
+{"level":"INFO","time":"2025-04-21T11:31:52.466Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:31:52.471Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:31:52.472Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:31:53.641Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:31:53.642Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:31:53.642Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:31:58.956Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":500,"duration":0.013674648}
+{"level":"INFO","time":"2025-04-21T11:33:02.950Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:33:02.954Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:33:02.954Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:33:04.281Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:33:04.282Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:33:04.282Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:33:21.500Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":500,"duration":0.037980885}
+{"level":"INFO","time":"2025-04-21T11:36:44.303Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:36:44.306Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:36:44.306Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:36:45.483Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:36:45.484Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:36:45.484Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:36:49.273Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":500,"duration":0.020624441}
+{"level":"INFO","time":"2025-04-21T11:37:48.055Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-21T11:37:48.059Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-21T11:37:48.059Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-21T11:37:49.325Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-21T11:37:49.325Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-21T11:37:49.325Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-21T11:37:57.037Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.014451229}
+{"level":"INFO","time":"2025-04-22T01:42:14.167Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"ERROR","time":"2025-04-22T01:42:14.169Z","caller":"initialize/mysql.go:17","msg":"Failed to connect to MySQL: dial tcp 127.0.0.1:3306: connect: connection refused","stacktrace":"mtb_web/internal/initialize.CheckErrerPanic\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:17\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:31\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-22T01:42:54.178Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T01:42:54.194Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T01:42:54.194Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T01:42:56.114Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T01:42:56.114Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T01:42:56.114Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T01:54:17.509Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T01:54:17.515Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T01:54:17.515Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T01:54:18.882Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T01:54:18.882Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T01:54:18.882Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T01:54:52.552Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/list","method":"GET","status":200,"duration":0.006046502}
+{"level":"INFO","time":"2025-04-22T01:55:33.038Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.015063994}
+{"level":"INFO","time":"2025-04-22T01:57:22.151Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T01:57:22.155Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T01:57:22.156Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T01:57:23.906Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T01:57:23.907Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T01:57:23.907Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T01:57:28.663Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.00925462}
+{"level":"INFO","time":"2025-04-22T02:00:36.717Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T02:00:36.721Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T02:00:36.721Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T02:00:37.985Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T02:00:37.985Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T02:00:37.985Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T02:00:42.114Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.011652804}
+{"level":"INFO","time":"2025-04-22T02:05:11.320Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T02:05:11.324Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T02:05:11.324Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T02:05:12.971Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T02:05:12.971Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T02:05:12.971Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T02:05:18.463Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.010687291}
+{"level":"INFO","time":"2025-04-22T02:06:26.346Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T02:06:26.350Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T02:06:26.350Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T02:06:27.666Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T02:06:27.666Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T02:06:27.666Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T02:06:33.464Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":200,"duration":0.016877924}
+{"level":"INFO","time":"2025-04-22T02:25:28.639Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T02:25:28.645Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T02:25:28.645Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T02:25:29.925Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T02:25:29.925Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T02:25:29.925Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T07:19:41.392Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T07:19:41.488Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T07:19:41.488Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T07:19:43.408Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T07:19:43.408Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T07:19:43.408Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T07:21:13.766Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_size/add","method":"POST","status":500,"duration":0.014355764}
+{"level":"INFO","time":"2025-04-22T07:48:27.655Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T07:48:27.660Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T07:48:27.660Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T07:48:28.958Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T07:48:28.958Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T07:48:28.959Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"ERROR","time":"2025-04-22T07:48:28.959Z","caller":"initialize/run.go:20","msg":"Server không thể khởi động do lỗi AWS","error":"handlers are already registered for path '/api/v1/product/list'","stacktrace":"mtb_web/internal/initialize.Run.func1\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:20\nruntime.gopanic\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/panic.go:791\ngithub.com/gin-gonic/gin.(*node).addRoute\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/tree.go:260\ngithub.com/gin-gonic/gin.(*Engine).addRoute\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/gin.go:349\ngithub.com/gin-gonic/gin.(*RouterGroup).handle\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:89\ngithub.com/gin-gonic/gin.(*RouterGroup).GET\n\t/home/nghiemhieu/go/pkg/mod/github.com/gin-gonic/gin@v1.10.0/routergroup.go:117\nmtb_web/internal/router/user.(*CategoryRouter).InitCategoryRouter\n\t/home/nghiemhieu/WebMTB/internal/router/user/category.router.go:15\nmtb_web/internal/initialize.NewRouter\n\t/home/nghiemhieu/WebMTB/internal/initialize/router.go:38\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:26\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-22T07:49:38.029Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T07:49:38.033Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T07:49:38.033Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T07:49:39.242Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T07:49:39.242Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T07:49:39.243Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T07:56:00.763Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/create","method":"POST","status":500,"duration":0.001478756}
+{"level":"INFO","time":"2025-04-22T07:58:35.027Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T07:58:35.031Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T07:58:35.031Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T07:58:36.368Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T07:58:36.369Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T07:58:36.369Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T07:58:41.044Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/create","method":"POST","status":500,"duration":0.00075561}
+{"level":"INFO","time":"2025-04-22T07:59:37.002Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T07:59:37.012Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T07:59:37.013Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T07:59:38.234Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T07:59:38.234Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T07:59:38.234Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T07:59:43.167Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/create","method":"POST","status":200,"duration":0.586869056}
+{"level":"INFO","time":"2025-04-22T08:00:15.406Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/create","method":"POST","status":200,"duration":0.562196917}
+{"level":"INFO","time":"2025-04-22T08:03:12.337Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/list","method":"GET","status":200,"duration":0.013775852}
+{"level":"INFO","time":"2025-04-22T08:04:02.573Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/get/1","method":"GET","status":404,"duration":0.000278031}
+{"level":"INFO","time":"2025-04-22T08:04:28.054Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/details/1","method":"GET","status":500,"duration":0.006867159}
+{"level":"INFO","time":"2025-04-22T08:04:36.403Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/details/3","method":"GET","status":200,"duration":0.026587072}
+{"level":"INFO","time":"2025-04-22T08:04:48.037Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/details/1","method":"GET","status":500,"duration":0.009185971}
+{"level":"INFO","time":"2025-04-22T08:05:29.552Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/details/2","method":"GET","status":500,"duration":0.004129621}
+{"level":"INFO","time":"2025-04-22T08:05:34.354Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/details/3","method":"GET","status":200,"duration":0.008749985}
+{"level":"INFO","time":"2025-04-22T08:05:39.901Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/details/4","method":"GET","status":200,"duration":0.009132919}
+{"level":"INFO","time":"2025-04-22T08:20:26.570Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T08:20:26.576Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T08:20:26.577Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T08:20:27.859Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T08:20:27.860Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T08:20:27.860Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T08:22:12.973Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/","method":"GET","status":404,"duration":0.000011985}
+{"level":"INFO","time":"2025-04-22T08:22:19.584Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/create","method":"GET","status":404,"duration":0.000010656}
+{"level":"INFO","time":"2025-04-22T08:22:33.803Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/add","method":"GET","status":404,"duration":0.000017535}
+{"level":"INFO","time":"2025-04-22T08:22:50.613Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/add","method":"GET","status":404,"duration":0.000008658}
+{"level":"INFO","time":"2025-04-22T08:23:18.226Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/add","method":"POST","status":500,"duration":0.535870913}
+{"level":"INFO","time":"2025-04-22T08:24:13.889Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T08:24:13.893Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T08:24:13.893Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T08:24:15.260Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T08:24:15.261Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T08:24:15.261Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T08:26:27.164Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T08:26:27.167Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T08:26:27.167Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T08:26:28.424Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T08:26:28.424Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T08:26:28.425Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T08:27:55.428Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/add","method":"POST","status":200,"duration":0.566288829}
+{"level":"INFO","time":"2025-04-22T08:28:06.724Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/list","method":"GET","status":200,"duration":0.003819672}
+{"level":"INFO","time":"2025-04-22T08:30:47.434Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_style/create","method":"GET","status":404,"duration":0.000153093}
+{"level":"INFO","time":"2025-04-22T08:30:51.684Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_style/create","method":"POST","status":200,"duration":0.021183342}
+{"level":"INFO","time":"2025-04-22T08:31:05.201Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_style/create","method":"POST","status":500,"duration":0.005349868}
+{"level":"INFO","time":"2025-04-22T08:32:35.221Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T08:32:35.226Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T08:32:35.226Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T08:32:36.492Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T08:32:36.492Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T08:32:36.492Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T08:32:46.396Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_style/create","method":"POST","status":200,"duration":0.021511319}
+{"level":"INFO","time":"2025-04-22T08:32:57.426Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_style/create","method":"POST","status":200,"duration":0.015954559}
+{"level":"INFO","time":"2025-04-22T08:38:54.932Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_color/","method":"POST","status":404,"duration":0.000047673}
+{"level":"INFO","time":"2025-04-22T08:40:39.794Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_materrials/add","method":"POST","status":200,"duration":0.017924081}
+{"level":"INFO","time":"2025-04-22T08:40:54.110Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_materrials/add","method":"POST","status":200,"duration":0.016674572}
+{"level":"INFO","time":"2025-04-22T08:41:18.985Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_materrials/add","method":"POST","status":200,"duration":0.01868984}
+{"level":"INFO","time":"2025-04-22T08:41:51.814Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_materrials/add","method":"POST","status":200,"duration":0.017309669}
+{"level":"INFO","time":"2025-04-22T08:53:12.724Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/create","method":"POST","status":200,"duration":1.524744223}
+{"level":"INFO","time":"2025-04-22T08:55:43.237Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/list","method":"GET","status":200,"duration":0.070138472}
+{"level":"INFO","time":"2025-04-22T08:58:19.147Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/details/1","method":"GET","status":200,"duration":0.052635269}
+{"level":"INFO","time":"2025-04-22T08:59:56.587Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/details/1","method":"GET","status":200,"duration":0.044007571}
+{"level":"INFO","time":"2025-04-22T09:00:35.492Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:00:35.496Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:00:35.496Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:00:36.653Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:00:36.653Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:00:36.653Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T09:00:41.941Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/details/1","method":"GET","status":200,"duration":0.04903422}
+{"level":"INFO","time":"2025-04-22T09:08:25.893Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/update","method":"PUT","status":404,"duration":0.000251619}
+{"level":"INFO","time":"2025-04-22T09:08:42.659Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:08:42.663Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:08:42.663Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:08:44.173Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:08:44.174Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:08:44.174Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T09:09:02.871Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/update","method":"PUT","status":500,"duration":1.448002317}
+{"level":"INFO","time":"2025-04-22T09:11:45.837Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/create","method":"POST","status":200,"duration":1.352629686}
+{"level":"INFO","time":"2025-04-22T09:15:51.692Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:15:51.696Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:15:51.696Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:15:52.917Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:15:52.917Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:15:52.917Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T09:16:03.421Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/update","method":"PUT","status":500,"duration":1.441288584}
+{"level":"INFO","time":"2025-04-22T09:18:23.863Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:18:23.868Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:18:23.868Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:18:25.254Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:18:25.255Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:18:25.255Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T09:18:31.051Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/update","method":"PUT","status":200,"duration":1.453617446}
+{"level":"INFO","time":"2025-04-22T09:21:02.489Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:21:02.492Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:21:02.493Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:21:03.706Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:21:03.706Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:21:03.706Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T09:21:18.508Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/update","method":"PUT","status":200,"duration":1.620941449}
+{"level":"INFO","time":"2025-04-22T09:24:34.496Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:24:34.501Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:24:34.501Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:24:35.891Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:24:35.892Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:24:35.892Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T09:24:40.554Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/update","method":"PUT","status":200,"duration":1.614882168}
+{"level":"INFO","time":"2025-04-22T09:26:07.464Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/delete/2","method":"PUT","status":404,"duration":0.000031706}
+{"level":"INFO","time":"2025-04-22T09:26:13.027Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/delete/2","method":"DELETE","status":200,"duration":0.020508299}
+{"level":"INFO","time":"2025-04-22T09:27:07.309Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product/list","method":"GET","status":200,"duration":0.041360048}
+{"level":"INFO","time":"2025-04-22T09:29:20.124Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/category/list","method":"GET","status":200,"duration":0.012247648}
+{"level":"INFO","time":"2025-04-22T09:45:12.612Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-22T09:45:12.616Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-22T09:45:12.616Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-22T09:45:13.813Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-22T09:45:13.813Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-22T09:45:13.813Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-22T10:02:00.119Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_Variant/create","method":"POST","status":200,"duration":0.026051385}
+{"level":"INFO","time":"2025-04-22T10:03:51.612Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_Variant/list","method":"GET","status":200,"duration":0.019858918}
+{"level":"INFO","time":"2025-04-22T10:04:35.083Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/product_Variant/details/1","method":"GET","status":200,"duration":0.01993369}
+{"level":"INFO","time":"2025-04-27T03:49:59.326Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-27T03:49:59.356Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-27T03:49:59.356Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"ERROR","time":"2025-04-27T03:50:00.522Z","caller":"initialize/mysql.go:86","msg":"Failed to migrate tables","error":"invalid field found for struct mtb_web/internal/models.ProductReview's field Parent: define a valid foreign key for relations or implement the Valuer/Scanner interface","stacktrace":"mtb_web/internal/initialize.migrateTables\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:86\nmtb_web/internal/initialize.InitMySQL\n\t/home/nghiemhieu/WebMTB/internal/initialize/mysql.go:41\nmtb_web/internal/initialize.Run\n\t/home/nghiemhieu/WebMTB/internal/initialize/run.go:15\nmain.main\n\t/home/nghiemhieu/WebMTB/cmd/server/main.go:8\nruntime.main\n\t/home/nghiemhieu/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.23.8.linux-amd64/src/runtime/proc.go:272"}
+{"level":"INFO","time":"2025-04-27T03:51:43.771Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-27T03:51:43.776Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-27T03:51:43.777Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-27T03:51:45.650Z","caller":"initialize/mysql.go:91","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-27T03:51:45.650Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-27T03:51:45.651Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-27T03:58:43.832Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"//api/v1/admin/slide_show/create","method":"POST","status":404,"duration":0.00007083}
+{"level":"INFO","time":"2025-04-27T03:58:57.323Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/slide_show/create","method":"POST","status":500,"duration":1.10117754}
+{"level":"INFO","time":"2025-04-27T04:00:47.902Z","caller":"initialize/run.go:14","msg":"Config log ok!!!","ok":"Success"}
+{"level":"INFO","time":"2025-04-27T04:00:47.907Z","caller":"initialize/mysql.go:34","msg":"Initialized MySQL Successfully"}
+{"level":"INFO","time":"2025-04-27T04:00:47.907Z","caller":"initialize/mysql.go:55","msg":"MySQL connection pool set successfully"}
+{"level":"INFO","time":"2025-04-27T04:00:49.350Z","caller":"initialize/mysql.go:92","msg":"Tables migrated successfully"}
+{"level":"INFO","time":"2025-04-27T04:00:49.350Z","caller":"initialize/awss3.go:34","msg":"Initialized AWS Successfully"}
+{"level":"INFO","time":"2025-04-27T04:00:49.351Z","caller":"initialize/awss3.go:45","msg":"AWS S3 Client initialized successfully"}
+{"level":"INFO","time":"2025-04-27T04:01:04.032Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/slide_show/create","method":"POST","status":200,"duration":1.129434645}
+{"level":"INFO","time":"2025-04-27T04:01:17.148Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/slide_show/list","method":"GET","status":200,"duration":0.0058104}
+{"level":"INFO","time":"2025-04-27T04:01:51.938Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin//details/1","method":"GET","status":404,"duration":0.000024298}
+{"level":"INFO","time":"2025-04-27T04:01:57.264Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/details/1","method":"GET","status":404,"duration":0.000017437}
+{"level":"INFO","time":"2025-04-27T04:02:33.371Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/details/1","method":"GET","status":404,"duration":0.000018802}
+{"level":"INFO","time":"2025-04-27T04:07:52.080Z","caller":"middlewares/logger.middleware.go:23","msg":"Request Log","path":"/api/v1/admin/slide_show/details/1","method":"GET","status":200,"duration":0.008717932}
