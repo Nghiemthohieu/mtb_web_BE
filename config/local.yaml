@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  mode: "dev"
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  dbname: web_mtb_db
+  username: root
+  password: my-secret-pw
+  maxIdleConns: 10
+  maxOpenConns: 100
+  connMaxLifetime: 3600
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password:
+  database:
+logger:
+  log_level: debug
+  file_log_name: "logs/app.log"
+  max_size: 500
+  max_backups: 3
+  max_age: 2
+  compress: true
+awsS3:
+  bucket_name: my-bucket-uni-center
+  region: ap-southeast-2
+  access_key_id: "access_key_id"
+  secret_access_key: "secret_access_key"
+Gmail:
+  host: smtp.gmail.com
+  port: 587
+  username: "email_username"
+  password: "email_password"
+AccessGmail:
+  client_id: 
+  client_secret: ""
+  redirect_url: "http://localhost:8080/auth/google/callback"
+AccessFacebook:
+  client_id: "client_id"
+  client_secret: "client_secret"
+  redirect_url: "http://localhost:8080/auth/facebook/callback"
