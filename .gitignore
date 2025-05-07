@@ -19,3 +19,4 @@ Thumbs.db
 *.swp
 # .gitignore
 config/.env
+docker-compose.yml
