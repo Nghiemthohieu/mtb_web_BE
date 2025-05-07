@@ -33,6 +33,8 @@ func LoadConfig() {
 	global.Config.AwsS3.SecretAccessKey = v.GetString("AWS_SECRET_ACCESS_KEY")
 	global.Config.Gmail.User = v.GetString("EMAIL_USERNAME")
 	global.Config.Gmail.Pass = v.GetString("EMAIL_PASSWORD")
+	global.Config.AccessGmail.ClientID = v.GetString("GOOGLE_CLIENT_ID")
+	global.Config.AccessGmail.ClientSecret = v.GetString("GOOGLE_CLIENT_SECRET")
 
 	fmt.Println("✅ Loaded config successfully")
 }
