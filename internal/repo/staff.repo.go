@@ -54,7 +54,7 @@ func (s *StaffRepo) UpdateFullStaff(user *models.User) (int, error) {
 
 		// Cập nhật thông tin staff nếu có
 		if user.Staff != nil {
-			user.Staff.UserID = int(user.ID) // đảm bảo đúng
+			user.Staff.UserID = user.ID // đảm bảo đúng
 			if err := tx.Save(user.Staff).Error; err != nil {
 				return err
 			}

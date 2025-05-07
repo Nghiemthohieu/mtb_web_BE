@@ -229,3 +229,19 @@ func (c *ProductsController) GetByCaregoryIDAndStyleID() gin.HandlerFunc {
 		response.SuccessResponse(ctx, 20001, products)
 	}
 }
+
+func (c *ProductsController) GetByStyleID() gin.HandlerFunc {
+	return func(ctx *gin.Context) {
+		id, err := strconv.Atoi(ctx.Param("style_id"))
+		if err != nil {
+			response.ErrorRespone(ctx, 400, 20051, err)
+			return
+		}
+		products, core, err := c.ProductService.GetByStyleID(id)
+		if err != nil {
+			response.ErrorRespone(ctx, 500, core, err)
+			return
+		}
+		response.SuccessResponse(ctx, 20001, products)
+	}
+}

@@ -14,7 +14,7 @@ func (p *CategoryRouter) InitCategoryRouter(Router *gin.RouterGroup) {
 		CategoryRouterPrivate.GET("/list", controllers.NewCategoriesController().GetAll())
 		CategoryRouterPrivate.POST("/create", controllers.NewCategoriesController().Create())
 		CategoryRouterPrivate.GET("/details/:id", controllers.NewCategoriesController().GetByID())
-		CategoryRouterPrivate.PUT("/update/:id", controllers.NewCategoriesController().Update())
+		CategoryRouterPrivate.PUT("/update", controllers.NewCategoriesController().Update())
 		CategoryRouterPrivate.DELETE("/delete/:id", controllers.NewCategoriesController().Delete())
 		CategoryRouterPrivate.POST("/delete", controllers.NewCategoriesController().DeleteByIDs())
 		CategoryRouterPrivate.DELETE("/delete", controllers.NewCategoriesController().DeleteAll())

@@ -178,8 +178,25 @@ func (r *ProductRepo) GetByCaregoryIDAndStyleID(categoryID int, styleID int) ([]
 		Preload("Categories").
 		Preload("ProductStyle").
 		Preload("ProductMaterial").
-		Preload("ProductImages").
+		Preload("ProductImages", "is_main = ?", true).
+		Preload("ProductImages.Product").
 		Where("category_id = ?", categoryID).
+		Where("product_style_id = ?", styleID).
+		Find(&products).Error; err != nil {
+		return nil, 20057, err
+	}
+	return products, 20001, nil
+}
+
+func (r *ProductRepo) GetByStyleID(styleID int) ([]models.Product, int, error) {
+	var products []models.Product
+	if err := global.Mdb.Preload("Size").
+		Preload("Color").
+		Preload("Categories").
+		Preload("ProductStyle").
+		Preload("ProductMaterial").
+		Preload("ProductImages", "is_main = ?", true).
+		Preload("ProductImages.Color").
 		Where("product_style_id = ?", styleID).
 		Find(&products).Error; err != nil {
 		return nil, 20057, err

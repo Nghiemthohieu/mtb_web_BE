@@ -13,6 +13,7 @@ func Run() {
 	InitLogger()
 	global.Logger.Info("Config log ok!!!", zap.String("ok", "Success"))
 	InitMySQL()
+	InitRedis()
 
 	// Kiểm tra lỗi AWS trước khi tiếp tục
 	defer func() {

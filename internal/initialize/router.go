@@ -7,6 +7,8 @@ import (
 	"mtb_web/internal/websocket"
 
 	"github.com/gin-gonic/gin"
+	swaggerFiles "github.com/swaggo/files"
+	ginSwagger "github.com/swaggo/gin-swagger"
 )
 
 func NewRouter() *gin.Engine {
@@ -19,10 +21,14 @@ func NewRouter() *gin.Engine {
 		gin.SetMode(gin.ReleaseMode)
 		r = gin.New()
 	}
+
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
+
 	//middleware
 	r.Use(middlewares.LoggerMiddle())        //logging
 	r.Use(middlewares.CorsMiddleware())      //cross
 	r.Use(middlewares.RateLimitMiddleware()) //limiter global
+	r.Use(middlewares.EnsureSessionID())
 	managerRouter := router.RouterGroupApp.Manager
 	userRouter := router.RouterGroupApp.User
 
@@ -49,6 +55,8 @@ func NewRouter() *gin.Engine {
 		managerRouter.InitCategoryRouter(mainGroup)
 		managerRouter.InitProductVariantRouter(mainGroup)
 		managerRouter.InitSlideShowRouter(mainGroup)
+		managerRouter.InitStaffsRouter(mainGroup)
+		managerRouter.InitCustomerRouter(mainGroup)
 	}
 	return r
 }

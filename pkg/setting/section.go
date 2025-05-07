@@ -1,12 +1,14 @@
 package setting
 
 type Config struct {
-	Server ServerSettings `mapstructure:"server"`
-	Logger LoggerSettings `mapstructure:"logger"`
-	Mysql  MySQLSettings  `mapstructure:"mysql"`
-	Redis  RedisSettings  `mapstructure:"redis"`
-	AwsS3  AWSS3Settings  `mapstructure:"awsS3"`
-	Gmail  GmailSettings  `mapstructure:"Gmail"`
+	Logger         LoggerSettings `mapstructure:"logger"`
+	Mysql          MySQLSettings  `mapstructure:"mysql"`
+	Redis          RedisSettings  `mapstructure:"redis"`
+	AwsS3          AWSS3Settings  `mapstructure:"awsS3"`
+	Gmail          GmailSettings  `mapstructure:"Gmail"`
+	Server         ServerSettings `mapstructure:"server"`
+	AccessGmail    AccessGmail    `mapstructure:"AccessGmail"`
+	AccessFacebook AccessFacebook `mapstructure:"AccessFacebook"`
 }
 
 type ServerSettings struct {
@@ -35,6 +37,10 @@ type MySQLSettings struct {
 }
 
 type RedisSettings struct {
+	Host     string `mapstructure:"host"`
+	Port     int    `mapstructure:"port"`
+	Password string `mapstructure:"password"`
+	Database int    `mapstructure:"database"`
 }
 
 type AWSS3Settings struct {
@@ -49,4 +55,16 @@ type GmailSettings struct {
 	Port int    `mapstructure:"port"`
 	User string `mapstructure:"username"`
 	Pass string `mapstructure:"password"`
+}
+
+type AccessGmail struct {
+	ClientID     string `mapstructure:"client_id"`
+	ClientSecret string `mapstructure:"client_secret"`
+	RedirectURL  string `mapstructure:"redirect_url"`
+}
+
+type AccessFacebook struct {
+	ClientID     string `mapstructure:"client_id"`
+	ClientSecret string `mapstructure:"client_secret"`
+	RedirectURL  string `mapstructure:"redirect_url"`
 }

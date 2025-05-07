@@ -36,15 +36,24 @@ func (s *ProductService) Create(product *models.Product) (int, error) {
 		if err != nil {
 			return 20052, fmt.Errorf("failed to decode base64 image: %v", err)
 		}
+		imgHover, err := util.DecodeBase64Image(img.ImageHorver)
+		if err != nil {
+			return 20052, fmt.Errorf("failed to decode base64 image: %v", err)
+		}
 
 		// Upload ảnh lên AWS S3 và nhận URL
 		imgURL, err := util.UpLoadFile(imgData)
 		if err != nil {
 			return 20052, fmt.Errorf("failed to upload image to S3: %v", err)
 		}
+		imgHoverURL, err := util.UpLoadFile(imgHover)
+		if err != nil {
+			return 20052, fmt.Errorf("failed to upload image to S3: %v", err)
+		}
 
 		// Cập nhật ImageURL trong ProductImage
 		img.ImageURL = imgURL
+		img.ImageHorver = imgHoverURL
 
 		// Thêm ProductImage đã cập nhật vào danh sách
 		product_images = append(product_images, img)
@@ -71,15 +80,24 @@ func (s *ProductService) Update(product *models.Product) (int, error) {
 		if err != nil {
 			return 20052, fmt.Errorf("failed to decode base64 image: %v", err)
 		}
+		imgHover, err := util.DecodeBase64Image(img.ImageHorver)
+		if err != nil {
+			return 20052, fmt.Errorf("failed to decode base64 image: %v", err)
+		}
 
 		// Upload ảnh lên AWS S3 và nhận URL
 		imgURL, err := util.UpLoadFile(imgData)
 		if err != nil {
 			return 20052, fmt.Errorf("failed to upload image to S3: %v", err)
 		}
+		imgHoverURL, err := util.UpLoadFile(imgHover)
+		if err != nil {
+			return 20052, fmt.Errorf("failed to upload image to S3: %v", err)
+		}
 
 		// Cập nhật ImageURL trong ProductImage
 		img.ImageURL = imgURL
+		img.ImageHorver = imgHoverURL
 
 		// Thêm ProductImage đã cập nhật vào danh sách
 		product_images = append(product_images, img)
@@ -113,6 +131,10 @@ func (s *ProductService) GetByCaregoryIDAndColorID(categoryID int, colorID int) 
 
 func (s *ProductService) GetByCaregoryIDAndStyleID(categoryID int, styleID int) ([]models.Product, int, error) {
 	return s.ProductRepo.GetByCaregoryIDAndStyleID(categoryID, styleID)
+}
+
+func (s *ProductService) GetByStyleID(styleID int) ([]models.Product, int, error) {
+	return s.ProductRepo.GetByStyleID(styleID)
 }
 
 func (s *ProductService) GetByCaregoryIDAndMaterialID(categoryID int, materialID int) ([]models.Product, int, error) {

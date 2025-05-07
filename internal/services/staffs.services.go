@@ -1,8 +1,10 @@
 package services
 
 import (
+	"fmt"
 	"mtb_web/internal/models"
 	"mtb_web/internal/repo"
+	util "mtb_web/pkg/utils"
 )
 
 type StaffService struct {
@@ -28,10 +30,20 @@ func (s *StaffService) GetStaffByEmail(email string) (models.User, int, error) {
 }
 
 func (s *StaffService) Create(staff *models.User) (int, error) {
+	hashedPwd, err := util.HashPassword(*staff.Password)
+	if err != nil {
+		return 0, fmt.Errorf("failed to hash password: %w", err)
+	}
+	staff.Password = &hashedPwd
 	return s.repo.Create(staff)
 }
 
 func (s *StaffService) UpdateFullStaff(user *models.User) (int, error) {
+	hashedPwd, err := util.HashPassword(*user.Password)
+	if err != nil {
+		return 0, fmt.Errorf("failed to hash password: %w", err)
+	}
+	user.Password = &hashedPwd
 	return s.repo.UpdateFullStaff(user)
 }
 

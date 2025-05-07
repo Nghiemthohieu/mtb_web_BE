@@ -9,4 +9,6 @@ type ManagerRouterGroup struct {
 	CategoryRouter
 	ProductVariantRouter
 	SlideShowRouter
+	StaffsRouter
+	CustomerRouter
 }
