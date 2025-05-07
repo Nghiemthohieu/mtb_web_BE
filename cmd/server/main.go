@@ -1,6 +1,9 @@
 package main
 
-import "mtb_web/internal/initialize"
+import (
+	_ "mtb_web/cmd/server/docs"
+	"mtb_web/internal/initialize"
+)
 
 func main() {
 	// This is the entry point for the server application.
